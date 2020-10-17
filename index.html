@@ -4,62 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
+
     <header>
       <nav>
-        <a href=""><span>Web</span><span>Studio</span> </a>
-
-        <ul>
-          <li><a href="#studio">Студия</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+        <a href="" class="link logo"
+          ><span class="logo-item">Web</span>Studio</a
+        >
+        <ul class="list">
+          <li class="nav-item">
+            <a href="./index.html" class="link nav-link">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a href="./portfolio.html" class="link nav-link">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="link nav-link">Контакты</a>
+          </li>
         </ul>
       </nav>
 
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link contacts-link">
+            info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="link contacts-link">
+            +38 096 111 11 11
+          </a>
+        </li>
       </ul>
     </header>
 
     <!-- Основной контент -->
 
     <main>
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero">
+        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="button">Заказать услугу</button>
       </section>
 
       <!-- Преимущества -->
 
-      <section id="studio">
+      <section>
         <h2 hidden>Наши преимущества</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="title advantages-title">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="title advantages-title">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="title advantages-title">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="title advantages-title">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -70,9 +91,9 @@
 
       <!-- Виды деятельности -->
 
-      <section id="portfolio">
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+      <section class="activity">
+        <h2 class="title">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/do/img1.jpg"
@@ -102,17 +123,17 @@
 
       <!-- Команда -->
 
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
+      <section class="team">
+        <h2 class="title">Наша команда</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/team/team1.jpg"
               width="270"
               alt="Мужчина в рубашке улыбается"
             />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="title team-mate">Игорь Демьяненко</h3>
+            <p class="profession">Product Designer</p>
           </li>
           <li>
             <img
@@ -120,8 +141,8 @@
               width="270"
               alt="Женщина в пиджаке улыбается"
             />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <h3 class="title team-mate">Ольга Репина</h3>
+            <p class="profession">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -129,8 +150,8 @@
               width="270"
               alt="Мужчина улыбается и смотрит в сторону"
             />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="title team-mate">Николай Тарасов</h3>
+            <p class="profession">Marketing</p>
           </li>
           <li>
             <img
@@ -138,8 +159,8 @@
               width="270"
               alt="Мужчина в фктболке скромно улыбается"
             />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <h3 class="title team-mate">Михаил Ермаков</h3>
+            <p class="profession">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -147,24 +168,29 @@
 
     <!-- Футер сайта -->
 
-    <footer>
-      <a href=""><span>Web</span><span>Studio</span> </a>
+    <footer class="footer">
+      <a href="" class="link logo"><span class="logo-item">Web</span>Studio</a>
       <div id="contacts">
-        <address>
-          <ul>
+        <address class="contacts">
+          <ul class="list">
             <li>
               <a
                 href="https://goo.gl/maps/qRCtbatXRMtNsMS67"
                 target="_blank"
                 rel="noopener noreferer"
+                class="link adress"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
             <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="link contacts-link"
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="link contacts-link"
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
