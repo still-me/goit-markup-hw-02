@@ -210,6 +210,12 @@ body {
   background: var(--second-backgroung-color);
 }
 
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white);
+  background-color: var(--accent-text-color);
+}
+
 .project-link {
   text-decoration: none;
   color: inherit;
@@ -226,4 +232,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.current-page {
+  color: var(--accent-text-color);
 }
